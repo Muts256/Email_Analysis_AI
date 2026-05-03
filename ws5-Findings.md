@@ -1,6 +1,6 @@
-# Findings & Verdict
+#### Findings & Verdict
 
-## Did AI Make the Analyst Faster?
+#### Did AI Make the Analyst Faster?
 
 The short answer is yes — significantly.
 
@@ -12,23 +12,23 @@ For a SOC team processing dozens of flagged emails every day, that difference is
 
 ---
 
-## Did AI Make the Analyst Better?
+#### Did AI Make the Analyst Better?
 
 This is the more interesting question, and the answer is more nuanced.
 
 Across the three case studies, AI demonstrated genuine analytical depth in areas that matter:
 
-**Header analysis** was fast and accurate. Parsing SPF, DKIM, and DMARC results, identifying relay path inconsistencies, and flagging the Message-ID anomaly in Case Study 003, where the ID domain was entirely unrelated to the supposed internal sender, are exactly the kinds of details that get missed under pressure.
+*Header analysis* was fast and accurate. Parsing SPF, DKIM, and DMARC results, identifying relay path inconsistencies, and flagging the Message-ID anomaly in Case Study 003, where the ID domain was entirely unrelated to the supposed internal sender, are exactly the kinds of details that get missed under pressure.
 
-**Social engineering identification** was strong. AI consistently named the specific tactics being used — urgency, isolation, authority impersonation, consequence escalation, and grounded each observation in the actual language of the email rather than offering generic observations.
+*Social engineering identification* was strong. AI consistently named the specific tactics being used — urgency, isolation, authority impersonation, consequence escalation, and grounded each observation in the actual language of the email rather than offering generic observations.
 
-**MITRE ATT&CK mapping** added a layer of structured context that would take a junior analyst considerably longer to produce manually, and might not be produced at all under time pressure.
+*MITRE ATT&CK mapping* added a layer of structured context that would take a junior analyst considerably longer to produce manually, and might not be produced at all under time pressure.
 
-**Cross-email correlation** was perhaps the most impressive output. Identifying the three-day consecutive pattern, the deliberate use of separate infrastructure, and the escalation in targeting scope required holding all three analyses in context simultaneously — something AI handles without difficulty and without fatigue.
+*Cross-email correlation* was perhaps the most impressive output. Identifying the three-day consecutive pattern, the deliberate use of separate infrastructure, and the escalation in targeting scope required holding all three analyses in context simultaneously — something AI handles without difficulty and without fatigue.
 
 ---
 
-## The Finding That Matters Most
+#### The Finding That Matters Most
 
 Case Study 002 is the one that proves the value of AI assistance most clearly and most honestly.
 
@@ -44,33 +44,33 @@ This is the difficulty human analysts face every day. Authentication checks are 
 
 ---
 
-## Where AI Falls Short
+#### Where AI Falls Short
 
 An honest verdict requires acknowledging the limitations.
 
-**AI cannot verify in real time.** It cannot check live domain reputation, query threat intelligence feeds, or confirm whether an IP address has been seen in prior campaigns. Every IOC still needs to be validated against tools like VirusTotal, URLScan.io, and MXToolbox. AI identifies what to look at — it cannot tell you what those lookups will find.
+*AI cannot verify in real time.* AI alone cannot perform real-time validation, but when integrated with SIEM and threat intelligence platforms, it can analyze and enrich live data. Every IOC still needs to be validated against tools like VirusTotal, URLScan.io, and MXToolbox. AI identifies what to look at — it cannot tell you what those lookups will find.
 
-**AI does not know your organisation.** It had no way of knowing whether TechNova Ltd has a genuine business relationship with Pinnacle Group, whether David Hargreaves is a known contact, or whether a wire transfer request of this nature would be unusual. That organisational context lives with the analyst — not with the AI.
+*AI does not know your organisation.* It had no way of knowing whether TechNova Ltd has a genuine business relationship with Pinnacle Group, whether David Hargreaves is a known contact, or whether a wire transfer request of this nature would be unusual. That organisational context lives with the analyst — not with the AI.
 
-**AI can be confidently wrong.** On occasion, AI may misinterpret a malformed header, assign an incorrect MITRE technique, or produce a severity rating that does not account for context the analyst holds but has not shared. Its output should always be reviewed, not accepted without question.
+*AI can be confidently wrong.* On occasion, AI may misinterpret a malformed header, assign an incorrect MITRE technique, or produce a severity rating that does not account for context the analyst holds but has not shared. Its output should always be reviewed, not accepted without question.
 
-**The prompt shapes the output.** AI is only as good as the question it is asked. A vague or poorly structured prompt produces a vague or incomplete analysis. The master triage prompt used in this project was deliberately designed to be comprehensive — but it took iteration to get there.
+*The prompt shapes the output.* AI is only as good as the question it is asked. A vague or poorly structured prompt produces a vague or incomplete analysis. The master triage prompt used in this project was deliberately designed to be comprehensive — but it took iteration to get there.
 
 ---
 
-## Is It Worth Adding to Your Workflow?
+#### Is It Worth Adding to Your Workflow?
 
 Yes — with clear eyes about what it is and what it is not.
 
-AI is not a replacement for an analyst. It does not replace the judgement, the organisational knowledge, the threat intelligence relationships, or the experience that a skilled SOC analyst brings to the table. Anyone who tells you otherwise is overselling it.
+AI is not a replacement for an analyst. It does not replace the judgment, the organisational knowledge, the threat intelligence relationships, or the experience that a skilled SOC analyst brings to the table. Anyone who tells you otherwise is overselling it.
 
-What it is, is a genuinely useful analytical partner — one that is fast, consistent, tireless, and thorough in ways that are difficult to maintain manually at volume. Used well, it raises the floor of every analysis. It ensures that the behavioural and contextual layer is never skipped, even when time pressure makes skipping it tempting.
+What it is is a genuinely useful analytical partner — one that is fast, consistent, tireless, and thorough in ways that are difficult to maintain manually at volume. Used well, it raises the floor of every analysis. It ensures that the behavioural and contextual layer is never skipped, even when time pressure makes skipping it tempting.
 
-For junior analysts, it provides structure and depth that accelerates development. For senior analysts, it handles the mechanical parts of triage quickly, freeing up time and cognitive capacity for the judgement calls that actually require experience.
+For junior analysts, it provides structure and depth that accelerates development. For senior analysts, it handles the mechanical parts of triage quickly, freeing up time and cognitive capacity for the judgment calls that actually require experience.
 
 ---
 
-## A Personal Reflection
+#### A Personal Reflection
 
 Working through these three case studies, the moment that stayed with me was Case Study 002.
 
