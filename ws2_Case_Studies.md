@@ -1,8 +1,8 @@
-#### Case Studies
+### Case Studies
 
-#### Case Study 001 
+### Case Study 001 
 
-##### *Email 1*
+#### *Email 1*
 
 Return-Path: <bounce-299481@microsoft365-verify.com>
 Received: from mail-gw.technovaLtd.com (10.10.5.20) by mail-store01.technovaLtd.com
@@ -47,9 +47,9 @@ Microsoft 365 Security Team
 
 ---
 
-#### Case Study 002
+### Case Study 002
 
-##### *Email 2*
+#### *Email 2*
 
 Return-Path: <d.hargreaves@pinnacle-group.com>
 Received: from mail-gw.technovaLtd.com (10.10.5.20) by mail-store01.technovaLtd.com
@@ -98,9 +98,9 @@ This message is confidential and intended solely for the addressee.
 
 ---
 
-#### Case Study 3
+### Case Study 3
 
-##### *Email 3*
+#### *Email 3*
 
 Return-Path: <hr-benefits@technovaLtd.com>
 Received: from mail-gw.technovaLtd.com (10.10.5.20) by mail-store01.technovaLtd.com
