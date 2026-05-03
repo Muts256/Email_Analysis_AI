@@ -20,7 +20,7 @@ Across the three case studies, AI demonstrated genuine analytical depth in areas
 
 *Header analysis* was fast and accurate. Parsing SPF, DKIM, and DMARC results, identifying relay path inconsistencies, and flagging the Message-ID anomaly in Case Study 003, where the ID domain was entirely unrelated to the supposed internal sender, are exactly the kinds of details that get missed under pressure.
 
-*Social engineering identification* was strong. AI consistently named the specific tactics being used — urgency, isolation, authority impersonation, consequence escalation, and grounded each observation in the actual language of the email rather than offering generic observations.
+*Social engineering identification* was strong. AI consistently named the specific tactics being used, urgency, isolation, authority impersonation, consequence escalation, and grounded each observation in the actual language of the email rather than offering generic observations.
 
 *MITRE ATT&CK mapping* added a layer of structured context that would take a junior analyst considerably longer to produce manually, and might not be produced at all under time pressure.
 
@@ -40,7 +40,7 @@ A human analyst under pressure, having already reviewed Case Study 001 with its 
 
 AI does not get reassured by green checkmarks. It does not carry the mental weight of the previous alert into the next one. It applied the same depth of behavioural and contextual analysis to Case Study 002 as it did to the emails that were technically obvious — and it was that second layer of analysis, not the technical layer, that exposed the attack.
 
-This is the difficulty human analysts face every day. Authentication checks are necessary but not sufficient. The threat has evolved beyond what technical controls alone can reliably catch — and AI assistance ensures that the behavioural and contextual layer of analysis is applied consistently, regardless of what the technical layer says.
+This is the difficulty human analysts face every day. Authentication checks are necessary but not sufficient. The threat has evolved beyond what technical controls alone can reliably catch, and AI assistance ensures that the behavioural and contextual layer of analysis is applied consistently, regardless of what the technical layer says.
 
 ---
 
@@ -64,7 +64,7 @@ Yes, with clear eyes about what it is and what it is not.
 
 AI is not a replacement for an analyst. It does not replace the judgment, the organisational knowledge, the threat intelligence relationships, or the experience that a skilled SOC analyst brings to the table. Anyone who tells you otherwise is overselling it.
 
-What it is is a genuinely useful analytical partner — one that is fast, consistent, tireless, and thorough in ways that are difficult to maintain manually at volume. Used well, it raises the floor of every analysis. It ensures that the behavioural and contextual layer is never skipped, even when time pressure makes skipping it tempting.
+What it is is a genuinely useful analytical partner. With this, it is fast, consistent, tireless, and thorough in ways that are difficult to maintain manually at volume. Used well, it can significantly improve analysis. It ensures that the behavioural and contextual layer is never skipped, even when time pressure makes skipping it tempting.
 
 For junior analysts, it provides structure and depth that accelerates development. For senior analysts, it handles the mechanical parts of triage quickly, freeing up time and cognitive capacity for the judgment calls that actually require experience.
 
