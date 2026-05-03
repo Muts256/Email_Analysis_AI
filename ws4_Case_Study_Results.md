@@ -11,7 +11,9 @@
 - *Sender:** "Microsoft 365 Security" <security-noreply@microsoft365-verify.com> — display name impersonates Microsoft but domain is microsoft365-verify.com, not microsoft.com
 - *Reply-To:* m365-support@securemail-verify.net — entirely different domain to the sender, a strong indicator of malicious intent
 - *Source IP:* 194.165.16.83 (external relay), 45.133.203.17 (originating host)
-- *Domains/URLs:* microsoft365-verify.com, securemail-verify.net, https://microsoft365-verify.com/reset?token=aHR0cHM6Ly9sb2dpbi5taWNyb3NvZnQuY29t&uid=james.miller&org=technovaLtd  The token value is Base64 encoded and decodes to https://login.microsoft.com, a common obfuscation technique
+- *Domains/URLs:* microsoft365-verify.com, securemail-verify.net, https://microsoft365-verify.com/reset?token=aHR0cHM6Ly9sb2dpbi5taWNyb3NvZnQuY29t&uid=james.miller&org=technovaLtd
+
+  The token value is Base64 encoded and decodes to https://login.microsoft.com, a common obfuscation technique
 - *Attachments:* None
 - *Authentication Results:* SPF: FAIL — IP 194.165.16.83 not authorised for microsoft365-verify.com | DKIM: NONE — no signature present | DMARC: FAIL — policy=none meaning no enforcement action taken
 
