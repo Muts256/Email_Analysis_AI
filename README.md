@@ -16,7 +16,7 @@ It covers:
 - Real case studies walked through step by step
 - An honest verdict on where AI adds value and where it falls short
 
-All AI components in the  project are implemented using **Claude models** with analyst oversight
+All AI components in the  project are implemented using **Claude models** with analyst oversight.
 
 #### How This Repo Is Organised
 
