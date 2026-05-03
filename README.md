@@ -25,9 +25,9 @@ It covers:
 
 | Folder | What's Inside |
 |---|---|
-| `methodology/` | The repeatable analysis process used across all case studies |
-| `case-studies/` | Individual phishing emails broken down step by step |
-| `prompts/` | The exact prompts used and the reasoning behind them |
-| `findings/` | The verdict — what worked, what didn't, and what surprised me |
-| `resources/` | References, frameworks, and further reading |
+| `methodology` | The repeatable analysis process used across all case studies |
+| `case-studies` | Individual phishing emails broken down step by step |
+| `prompts` | The exact prompts used and the reasoning behind them |
+| `findings` | The verdict — what worked, what didn't, and what surprised me |
+| `resources` | References, frameworks, and further reading |
 
