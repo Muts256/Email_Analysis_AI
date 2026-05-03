@@ -2,7 +2,7 @@
 
 #### Did AI Make the Analyst Faster?
 
-The short answer is yes — significantly.
+The short answer is yes.
 
 A SOC analyst working through three emails manually, producing structured triage reports, extracting IOCs, mapping to MITRE ATT&CK, identifying cross-email patterns, and writing up a campaign assessment would typically spend the best part of two to three hours on this volume of work. That estimate assumes an experienced analyst working without interruption, in a real SOC environment, and that time would likely be longer.
 
