@@ -25,9 +25,11 @@ It covers:
 
 | Folder | What's Inside |
 |---|---|
-| `methodology` | The repeatable analysis process used across all case studies |
-| `case-studies` | Individual phishing emails broken down step by step |
-| `prompts` | The exact prompts used and the reasoning behind them |
-| `findings` | The verdict: What worked, what didn't, and what surprised me |
-| `resources` | References, frameworks, and further reading |
+| [Methodology](https://github.com/Muts256/Email_Analysis_AI/blob/main/ws1_Methodology.md) | The repeatable analysis process used across all case studies |
+| [Case Studies](https://github.com/Muts256/Email_Analysis_AI/blob/main/ws2_Case_Studies.md) | Individual phishing emails broken down step by step |
+| [Prompts](https://github.com/Muts256/Email_Analysis_AI/blob/main/ws3_Prompts.md) | The exact prompts used and the reasoning behind them |
+| [Case Study Results](https://github.com/Muts256/Email_Analysis_AI/blob/main/ws4_Case_Study_Results.md)  | AI Analysis: The AI analysis of the email after receiving the prompt |
+| [Findings](https://github.com/Muts256/Email_Analysis_AI/blob/main/ws5-Findings.md)  | The verdict: My analysis|
+| [AI Governance](https://github.com/Muts256/Email_Analysis_AI/blob/main/ws6_AI_Governance.md)  | Observation: EU AI act |
+| [Resources](https://github.com/Muts256/Email_Analysis_AI/blob/main/ws7_Resources.md) | References, frameworks, and further reading |
 
