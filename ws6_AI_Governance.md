@@ -1,4 +1,4 @@
-### A Note on the EU AI Act and OWASP Top 10
+### A Note on the EU AI Act and OWASP Top 10 (LLMs)
 
 This project is focused on whether AI makes the analyst's job faster and more effective; that remains the central question. However, it is important to acknowledge that deploying AI in a security operations context **does not** exist in a regulatory vacuum.
 
