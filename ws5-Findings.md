@@ -54,13 +54,13 @@ An honest verdict requires acknowledging the limitations.
 
 *AI can be confidently wrong.* On occasion, AI may misinterpret a malformed header, assign an incorrect MITRE technique, or produce a severity rating that does not account for context the analyst holds but has not shared. Its output should always be reviewed, not accepted without question.
 
-*The prompt shapes the output.* AI is only as good as the question it is asked. A vague or poorly structured prompt produces a vague or incomplete analysis. The master triage prompt used in this project was deliberately designed to be comprehensive — but it took iteration to get there.
+*The prompt shapes the output.* AI is only as good as the question it is asked. A vague or poorly structured prompt produces a vague or incomplete analysis. The master triage prompt used in this project was deliberately designed to be comprehensive, but it took iterations to get the final product.
 
 ---
 
 #### Is It Worth Adding to Your Workflow?
 
-Yes — with clear eyes about what it is and what it is not.
+Yes, with clear eyes about what it is and what it is not.
 
 AI is not a replacement for an analyst. It does not replace the judgment, the organisational knowledge, the threat intelligence relationships, or the experience that a skilled SOC analyst brings to the table. Anyone who tells you otherwise is overselling it.
 
