@@ -89,3 +89,49 @@ Chief Executive Officer
 Pinnacle Group
 
 This message is confidential and intended solely for the addressee.
+
+---
+
+#### Case Study 3
+
+Return-Path: <hr-benefits@technovaLtd.com>
+Received: from mail-gw.technovaLtd.com (10.10.5.20) by mail-store01.technovaLtd.com
+    (10.10.5.25) with ESMTP id tR9wK4Fy; Wed, 09 Apr 2025 10:35:47 -0500
+Received: from unknown (77.91.124.38) by mail-gw.technovaLtd.com (10.10.5.20)
+    with ESMTP id hJ6pN1Qb; Wed, 09 Apr 2025 10:35:44 -0500
+From: "TechNova Ltd Human Resources" <hr-benefits@technovaLtd.com>
+To: all-employees@technovaLtd.com
+Subject: Updated Employee Benefits Package - Action Required
+Date: Wed, 09 Apr 2025 15:35:44 +0000
+Message-ID: <2d7f4b.9e08c3@mail-node41.biz>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_5517_839204751"
+X-Mailer: Python/3.11 aiosmtplib
+Authentication-Results: mail-gw.technovaLtd.com;
+    spf=softfail (sender IP 77.91.124.38 is not explicitly authorized 
+    for domain technovaLtd.com);
+    dkim=fail (signature verification failed);
+    dmarc=fail (policy=quarantine, disposition=quarantine)
+
+Dear Team,
+
+The Human Resources department has finalised the updated employee
+benefits package for Q2 2025. Please review the attached document
+at your earliest convenience.
+
+IMPORTANT: The attached Excel file contains an interactive benefits calculator. You must enable macros when prompted to use the calculator and view your personalised benefits options.
+
+To access the calculator:
+1. Open the attached file (Employee_Benefits_Q2_2025.xlsm)
+2. Click "Enable Editing" if prompted
+3. Click "Enable Content" to activate the interactive features
+4. Enter your employee ID to generate your personalised summary
+
+Please complete your benefits review and submit your selections by Friday, 18 April 2025.
+
+If you have questions, contact HR at extension 4500.
+
+Best regards,
+TechNova Ltd Human Resources Department
+
+Attachment: Employee_Benefits_Q2_2025.xlsm (487 KB)
