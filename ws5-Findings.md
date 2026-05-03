@@ -48,7 +48,7 @@ This is the difficulty human analysts face every day. Authentication checks are 
 
 An honest verdict requires acknowledging the limitations.
 
-*AI cannot verify in real time.* AI alone cannot perform real-time validation, but when integrated with SIEM and threat intelligence platforms, it can analyze and enrich live data. Every IOC still needs to be validated against tools like VirusTotal, URLScan.io, and MXToolbox. AI identifies what to look at. It cannot tell you what those lookups will find.
+*AI cannot verify in real time.* AI identifies what to investigate, but it cannot investigate it for you. Every IOC this project flagged still required manual validation against tools like VirusTotal, URLScan.io, and MXToolbox. In a standalone workflow like this one, AI has no live connection to threat intelligence feeds or external data sources. That changes when AI is embedded within a SIEM or threat intelligence platform. In either case, the lookup and the judgment call remain the analyst's responsibility.
 
 *AI does not know your organisation.* It had no way of knowing whether TechNova Ltd has a genuine business relationship with Pinnacle Group, whether David Hargreaves is a known contact, or whether a wire transfer request of this nature would be unusual. That organisational context lives with the analyst, not with the AI.
 
