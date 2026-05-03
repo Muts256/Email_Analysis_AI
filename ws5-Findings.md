@@ -24,7 +24,7 @@ Across the three case studies, AI demonstrated genuine analytical depth in areas
 
 *MITRE ATT&CK mapping* added a layer of structured context that would take a junior analyst considerably longer to produce manually, and might not be produced at all under time pressure.
 
-*Cross-email correlation* was perhaps the most impressive output. Identifying the three-day consecutive pattern, the deliberate use of separate infrastructure, and the escalation in targeting scope required holding all three analyses in context simultaneously — something AI handles without difficulty and without fatigue.
+*Cross-email correlation* was perhaps the most impressive output. Identifying the three-day consecutive pattern, the deliberate use of separate infrastructure, and the escalation in targeting scope required holding all three analyses in context simultaneously, something AI handles without difficulty and without fatigue.
 
 ---
 
