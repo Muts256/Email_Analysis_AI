@@ -48,13 +48,15 @@ This is the difficulty human analysts face every day. Authentication checks are 
 
 An honest verdict requires acknowledging the limitations.
 
-*AI cannot verify in real time.* AI alone cannot perform real-time validation, but when integrated with SIEM and threat intelligence platforms, it can analyze and enrich live data. Every IOC still needs to be validated against tools like VirusTotal, URLScan.io, and MXToolbox. AI identifies what to look at — it cannot tell you what those lookups will find.
+*AI cannot verify in real time.* AI alone cannot perform real-time validation, but when integrated with SIEM and threat intelligence platforms, it can analyze and enrich live data. Every IOC still needs to be validated against tools like VirusTotal, URLScan.io, and MXToolbox. AI identifies what to look at. It cannot tell you what those lookups will find.
 
-*AI does not know your organisation.* It had no way of knowing whether TechNova Ltd has a genuine business relationship with Pinnacle Group, whether David Hargreaves is a known contact, or whether a wire transfer request of this nature would be unusual. That organisational context lives with the analyst — not with the AI.
+*AI does not know your organisation.* It had no way of knowing whether TechNova Ltd has a genuine business relationship with Pinnacle Group, whether David Hargreaves is a known contact, or whether a wire transfer request of this nature would be unusual. That organisational context lives with the analyst, not with the AI.
 
 *AI can be confidently wrong.* On occasion, AI may misinterpret a malformed header, assign an incorrect MITRE technique, or produce a severity rating that does not account for context the analyst holds but has not shared. Its output should always be reviewed, not accepted without question.
 
 *The prompt shapes the output.* AI is only as good as the question it is asked. A vague or poorly structured prompt produces a vague or incomplete analysis. The master triage prompt used in this project was deliberately designed to be comprehensive, but it took iterations to get the final product.
+
+*Cost Variable.* AI introduces variable operational costs because the pricing scales with input and output token usage. In high volume SOC enviroments, large logs or email datasets can significantly increase consumption and overall costs
 
 ---
 
