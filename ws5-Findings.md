@@ -38,7 +38,7 @@ It was also a sophisticated Business Email Compromise attempt targeting a $47,25
 
 A human analyst under pressure, having already reviewed Case Study 001 with its clear technical failures, could very reasonably see three green checkmarks on Case Study 002 and move on. That is not a failure of skill. That is what cognitive load and time pressure do to even experienced analysts.
 
-AI does not get reassured by green checkmarks. It does not carry the mental weight of the previous alert into the next one. It applied the same depth of behavioural and contextual analysis to Case Study 002 as it did to the emails that were technically obvious — and it was that second layer of analysis, not the technical layer, that exposed the attack.
+AI does not get reassured by green checkmarks. It does not carry the mental weight of the previous alert into the next one. It applied the same depth of behavioural and contextual analysis to Case Study 002 as it did to the emails that were technically obvious, and it was that second layer of analysis, not the technical layer, that exposed the attack.
 
 This is the difficulty human analysts face every day. Authentication checks are necessary but not sufficient. The threat has evolved beyond what technical controls alone can reliably catch, and AI assistance ensures that the behavioural and contextual layer of analysis is applied consistently, regardless of what the technical layer says.
 
