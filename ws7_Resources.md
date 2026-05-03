@@ -16,6 +16,12 @@ The technique entry covering financially motivated fraud via email.
 
 https://attack.mitre.org/techniques/T1657/
 
+##### MITRE ATLAS
+MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems)
+It is the AI-specific companion to MITRE ATT&CK: Covering tactics and techniques used against machine learning systems. A natural fit alongside the OWASP LLM reference.
+
+https://atlas.mitre.org
+
 ---
 
 #### Email Authentication Standards
@@ -53,8 +59,4 @@ Technical research and analysis on Business Email Compromise campaigns, covering
 
 https://googleprojectzero.blogspot.com
 
-##### MITRE ATLAS
-MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems)
-It is the AI-specific companion to MITRE ATT&CK: Covering tactics and techniques used against machine learning systems. A natural fit alongside the OWASP LLM reference.
 
-https://atlas.mitre.org
