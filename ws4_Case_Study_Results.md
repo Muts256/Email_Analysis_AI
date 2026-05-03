@@ -34,7 +34,10 @@
   - T1598 — Steal Web Session Cookie (likely post-credential harvest)
 
 *Severity: HIGH*
-Justification: Targets a named individual with personalised content, uses credential harvesting infrastructure, and DMARC policy=none means the email is unlikely to be automatically blocked.
+
+Justification: 
+
+Targets a named individual with personalised content, uses credential harvesting infrastructure, and DMARC policy=none means the email is unlikely to be automatically blocked.
 
 #### Recommendation
 - *User:* Do not click the link. Do not enter credentials on any page reached from this email. Report to the SOC immediately
@@ -74,8 +77,11 @@ Justification: Targets a named individual with personalised content, uses creden
   - T1657 — Financial Theft
   - T1585 — Establish Accounts (attacker likely compromised or registered pinnacle-group.com to pass authentication)
 
-**Severity: CRITICAL**
-Justification: All technical authentication checks pass, making this invisible to standard email security controls. The attack targets a financial process with a specific and immediate monetary outcome. The sophistication of the social engineering significantly increases the likelihood of success.
+*Severity: CRITICAL*
+
+Justification: 
+
+All technical authentication checks pass, making this invisible to standard email security controls. The attack targets a financial process with a specific and immediate monetary outcome. The sophistication of the social engineering significantly increases the likelihood of success.
 
 #### Recommendation
 - *User:* Do not process the transfer. Do not reply to the email. Attempt to verify the request by calling David Hargreaves directly using a phone number sourced independently, not from this email. Report to the SOC immediately
@@ -116,7 +122,10 @@ Justification: All technical authentication checks pass, making this invisible t
   - T1486 — Data Encrypted for Impact (if ransomware payload)
 
 *Severity: CRITICAL*
-Justification: Impersonates a trusted internal function, targets the entire organisation, and the macro-enabled attachment has the potential to deliver a range of high-impact payloads. A single user enabling macros could result in a network-wide compromise.
+
+Justification: 
+
+Impersonates a trusted internal function, targets the entire organisation, and the macro-enabled attachment has the potential to deliver a range of high-impact payloads. A single user enabling macros could result in a network-wide compromise.
 
 #### Recommendation
 - *User:* Do not open the attachment. Do not enable macros under any circumstances. If the file has already been opened, disconnect from the network immediately and contact the SOC. Report the email without clicking anything
@@ -163,6 +172,14 @@ Case Study 002 passed every technical check. SPF passed. DKIM passed. DMARC pass
 
 Case Study 003 sits in the middle: Partial technical failures that should have triggered quarantine, combined with highly convincing internal impersonation that could easily deceive a user who receives a quarantine release notification without context.
 
-The lesson across all three is consistent: effective email triage requires the analyst to ask both *what does the technical evidence say* and *does this behaviour make sense*. Headers tell you where an email came from. Context tells you whether it should have been sent at all. Neither question is sufficient on its own. Together, they give you the full picture.
+*The lesson across all three is consistent:*
+
+Effective email triage requires the analyst to ask both: 
+
+*1. What does the technical evidence say?* and 
+
+*2. Does this behaviour make sense?* 
+
+Headers tell you where an email came from. Context tells you whether it should have been sent at all. Neither question is sufficient on its own. Together, they give you the full picture.
 
 AI accelerates both layers of this analysis, parsing headers quickly, identifying social engineering patterns in the body, and mapping findings to established frameworks. What it cannot replace is the analyst's judgement about whether something feels right. That remains the most important tool in the triage process.
