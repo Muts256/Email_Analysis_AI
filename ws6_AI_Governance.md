@@ -11,6 +11,9 @@ Under the EU AI Act, for organisations in scope, it is a requirement. For securi
 The project also considers security risks aligned with the OWASP Top 10 for LLMs.
 
 Prompt Injection: Malicious email content could attempt to manipulate the AI’s analysis or output.
+
 Data Leakage: Sensitive email data must not be exposed through model outputs or logging.
+
 Insecure Output Handling: AI-generated analysis must be treated as untrusted and validated before action.
+
 Over-reliance on AI: Results are used to support, not replace, analyst decision-making.
