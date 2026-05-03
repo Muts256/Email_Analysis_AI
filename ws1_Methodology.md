@@ -2,21 +2,15 @@
 
 #### Overview
 
-This template is the foundation of every analysis in this project. It 
-provides a repeatable, structured approach to phishing triage, designed 
-to be followed consistently, whether you are analysing the first suspicious 
-email or fiftieth.
+This template is the foundation of most analyses. It  provides a repeatable, structured approach to phishing triage, designed to be followed consistently, whether you are analysing the first suspicious email or the fiftieth.
 
-AI is used as an analytical aid throughout this process. Each section notes 
-where AI was applied, what it was asked to do, and whether it genuinely 
-added value.
+AI is used as an analytical aid throughout this process. Each section notes where AI was applied, what it was asked to do, and whether it genuinely added value.
 
 ---
 
 #### Step 1: Initial Observation
 
-Before diving into headers or links, take a moment to record your first 
-impressions. What made this email suspicious? Trust your instincts.
+Before diving into headers or links, take a moment to record your first impressions. What made this email suspicious? Trust your instincts.
 
 *What to note:*
 - What triggered the suspicion (reported by user, caught by filter, random check)
@@ -31,8 +25,7 @@ you spot patterns across case studies and trains your instincts over time.
 
 #### Step 2: Sender Analysis
 
-Attackers invest heavily in making emails look legitimate. This step looks 
-beyond the display name to examine what is actually being sent and from where.
+Attackers invest heavily in making emails look legitimate. This step looks beyond the display name to examine what is actually being sent and from where.
 
 *What to examine:*
 - Display name vs actual email address. Do they match?
@@ -41,16 +34,13 @@ beyond the display name to examine what is actually being sent and from where.
 - Whether the domain has any legitimate web presence.
 
 *Why this matters:*
-Display name spoofing is one of the simplest and most effective phishing 
-techniques. Many users never look past the name they recognise.
+Display name spoofing is one of the simplest and most effective phishing techniques. Many users never look past the name they recognise.
 
 ---
 
 #### Step 3: Header Analysis
 
-Email headers tell the full story of how a message travelled from sender 
-to inbox. They are difficult to fake entirely and often reveal the clearest 
-evidence of spoofing or malicious infrastructure.
+Email headers tell the full story of how a message travelled from sender to inbox. They are difficult to fake entirely and often reveal the clearest evidence of spoofing or malicious infrastructure.
 
 *What to examine:*
 - *SPF:* Did the email come from an authorised server for that domain?
@@ -93,15 +83,13 @@ Links are the most common delivery mechanism for phishing attacks. This step exa
 - Domain reputation using tools such as VirusTotal or URLScan.io
 
 *Why this matters:*
-A convincing email with a malicious link is still a phishing email. 
-Never assume the link matches what the text says.
+A convincing email with a malicious link is still a phishing email. Never assume the link matches what the text says.
 
 ---
 
 #### Step 6: Attachment Analysis
 
-Not all phishing emails contain attachments, but when they do, this step 
-should never be skipped.
+Not all phishing emails contain attachments, but when they do, this step should never be skipped.
 
 *What to examine:*
 - File type executables, Office files with macros, and PDFs are common vehicles
@@ -110,16 +98,13 @@ should never be skipped.
 - Scanning with tools such as VirusTotal, where safe to do so
 
 **Why this matters:**
-Malicious attachments can deliver malware, ransomware, or credential 
-harvesters. Even a convincing attachment from a known sender warrants 
-scrutiny if the context is unusual.
+Malicious attachments can deliver malware, ransomware, or credential harvesters. Even a convincing attachment from a known sender warrants scrutiny if the context is unusual.
 
 ---
 
 #### Step 7 — AI Contribution
 
-This step is unique to this project. After completing the analysis, 
-This section documents honestly how AI was used and whether it added value.
+This step is unique to this project. After completing the analysis, This section documents honestly how AI was used and whether it added value.
 
 **What to record:**
 - Which steps was AI applied to
@@ -129,8 +114,7 @@ This section documents honestly how AI was used and whether it added value.
 - Any instances where AI was wrong or unhelpful
 
 *Why this matters:*
-This is the core question of the project. Without honestly documenting 
-AI's contribution at each stage, the findings section has no foundation.
+This is the core question of the project. Without honestly documenting AI's contribution at each stage, the findings section has no foundation.
 
 ---
 
@@ -149,5 +133,4 @@ Every analysis ends with a clear, documented verdict.
 - Recommended action (release, quarantine, block sender, escalate)
 
 *Why this matters:*
-A structured verdict ensures every analysis ends with a clear, 
-actionable outcome — not just a list of observations.
+A structured verdict ensures every analysis ends with a clear, actionable outcome — not just a list of observations.
