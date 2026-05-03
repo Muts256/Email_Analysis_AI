@@ -35,7 +35,7 @@ Attackers invest heavily in making emails look legitimate. This step looks
 beyond the display name to examine what is actually being sent and from where.
 
 *What to examine:*
-- Display name vs actual email address — do they match?
+- Display name vs actual email address. Do they match?
 - The sending domain: Is it a lookalike or typosquat of a legitimate domain?
 - Domain age: Newly registered domains are a strong indicator of malicious intent.
 - Whether the domain has any legitimate web presence.
