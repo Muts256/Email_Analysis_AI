@@ -18,8 +18,8 @@ Before diving into headers or links, take a moment to record your first impressi
 - The overall tone and purpose of the email.
 
 *Why this matters:*
-First impressions are data. Documenting them before analysis begins helps 
-you spot patterns across case studies and trains your instincts over time.
+
+First impressions are data. Documenting them before analysis begins helps you spot patterns across case studies and trains your instincts over time.
 
 ---
 
@@ -34,6 +34,7 @@ Attackers invest heavily in making emails look legitimate. This step looks beyon
 - Whether the domain has any legitimate web presence.
 
 *Why this matters:*
+
 Display name spoofing is one of the simplest and most effective phishing techniques. Many users never look past the name they recognise.
 
 ---
@@ -50,6 +51,7 @@ Email headers tell the full story of how a message travelled from sender to inbo
 - *X-Originating-IP:* Where did the email actually originate from?
 
 *Why this matters:*
+
 A legitimate email from a well-configured domain will typically pass SPF, DKIM and DMARC. Failures across all three are a strong indication that something is wrong.
 
 ---
@@ -67,6 +69,7 @@ most value.
 - Mismatched or generic greetings ("Dear Customer")
 
 *Why this matters:*
+
 Social engineering is the core of most phishing attacks. Understanding the tactic being used helps assess how convincing the email is and who it is likely targeting.
 
 ---
@@ -83,6 +86,7 @@ Links are the most common delivery mechanism for phishing attacks. This step exa
 - Domain reputation using tools such as VirusTotal or URLScan.io
 
 *Why this matters:*
+
 A convincing email with a malicious link is still a phishing email. Never assume the link matches what the text says.
 
 ---
@@ -98,13 +102,14 @@ Not all phishing emails contain attachments, but when they do, this step should 
 - Scanning with tools such as VirusTotal, where safe to do so
 
 **Why this matters:**
+
 Malicious attachments can deliver malware, ransomware, or credential harvesters. Even a convincing attachment from a known sender warrants scrutiny if the context is unusual.
 
 ---
 
 #### Step 7 — AI Contribution
 
-This step is unique to this project. After completing the analysis, This section documents honestly how AI was used and whether it added value.
+This step is unique to this project. After completing the analysis, this section documents how AI was used and whether it added value.
 
 **What to record:**
 - Which steps was AI applied to
@@ -114,6 +119,7 @@ This step is unique to this project. After completing the analysis, This section
 - Any instances where AI was wrong or unhelpful
 
 *Why this matters:*
+
 This is the core question of the project. Without honestly documenting AI's contribution at each stage, the findings section has no foundation.
 
 ---
@@ -133,4 +139,5 @@ Every analysis ends with a clear, documented verdict.
 - Recommended action (release, quarantine, block sender, escalate)
 
 *Why this matters:*
-A structured verdict ensures every analysis ends with a clear, actionable outcome — not just a list of observations.
+
+A structured verdict ensures every analysis ends with a clear, actionable outcome, not just a list of observations.
