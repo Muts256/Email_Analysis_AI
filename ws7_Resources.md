@@ -44,8 +44,9 @@ https://datatracker.ietf.org/doc/html/rfc7489
 ---
 
 #### Further Reading:
+
 ##### Verizon Data Breach Investigations Report (DBIR)
-Published annually, the DBIR provides data-driven analysis of breach patterns across industries. Phishing consistently features as one of the top initial access vectors — a useful reference for contextualising the threat landscape.
+Published annually, the DBIR provides data-driven analysis of breach patterns across industries. Phishing consistently features as one of the top initial access vectors. A useful reference for contextualising the threat landscape.
 
 https://www.verizon.com/business/resources/reports/dbir/
 
