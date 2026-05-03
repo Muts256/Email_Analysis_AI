@@ -12,9 +12,10 @@ less burnt out.
 
 #### What This Project Covers
 
-This is not a tool or a script. It is a documented methodology — a practical 
-workflow for using AI as an analytical aid during phishing triage. It covers:
+This is not a tool or a script. It is a documented methodology, a practical 
+workflow for using AI as an analytical aid during phishing triage. 
 
+It covers:
 - How to structure your analysis using AI
 - The prompts that work and the ones that don't
 - Real case studies walked through step by step
