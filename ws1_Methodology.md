@@ -58,7 +58,7 @@ A legitimate email from a well-configured domain will typically pass SPF, DKIM a
 
 #### Step 4: Content Analysis
 
-This step examines the body of the email — the language, tone, and psychological tactics being used. This is where AI tends to add the 
+This step examines the body of the email, its language, tone, and psychological tactics. This is where AI tends to add the 
 most value.
 
 *What to examine:*
