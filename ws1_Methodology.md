@@ -79,7 +79,7 @@ Social engineering is the core of most phishing attacks. Understanding the tacti
 Links are the most common delivery mechanism for phishing attacks. This step examines every link in the email before anything is clicked.
 
 **What to examine:**
-- Hover text vs the actual destination URL — do they match?
+- Hover text vs the actual destination URL, do they match?
 - Lookalike domains (e.g., paypa1.com instead of paypal.com)
 - URL shorteners masking the true destination
 - HTTPS: Its presence does not guarantee legitimacy
@@ -107,12 +107,12 @@ Malicious attachments can deliver malware, ransomware, or credential harvesters.
 
 ---
 
-#### Step 7 — AI Contribution
+#### Step 7 AI Contribution
 
 This step is unique to this project. After completing the analysis, this section documents how AI was used and whether it added value.
 
 **What to record:**
-- Which steps was AI applied to
+- Which step/s was AI applied to
 - What prompts were used, and what they returned
 - Whether AI spotted anything the manual analysis missed
 - Whether AI slowed the process down or sped it up
