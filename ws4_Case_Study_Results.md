@@ -15,7 +15,7 @@
 
   The token value is Base64 encoded and decodes to https://login.microsoft.com, a common obfuscation technique
 - *Attachments:* None
-- *Authentication Results:* SPF: FAIL — IP 194.165.16.83 not authorised for microsoft365-verify.com | DKIM: NONE - no signature present | DMARC: FAIL - policy=none meaning no enforcement action taken
+- *Authentication Results:* SPF: FAIL - IP 194.165.16.83 not authorised for microsoft365-verify.com | DKIM: NONE - no signature present | DMARC: FAIL - policy=none meaning no enforcement action taken
 
 #### Social Engineering Indicators
 - Urgency and fear - "Your password will expire in 24 hours."
@@ -27,7 +27,7 @@
 #### Technical Assessment
 - *Initial Access:* Valid Accounts via harvested credentials (user clicks link and submits credentials to attacker-controlled page)
 - *Impact:* Account takeover, unauthorised access to email, Teams, OneDrive, and any connected services. Potential for lateral movement or Business Email Compromise from the compromised account
-- *Likelihood of Success:* Medium — authentication failures are detectable but DMARC policy=none means no automatic quarantine or rejection
+- *Likelihood of Success:* Medium - authentication failures are detectable but DMARC policy=none means no automatic quarantine or rejection
 - *MITRE ATT&CK:*
   - T1566.002 - Phishing: Spearphishing Link
   - T1078 - Valid Accounts
