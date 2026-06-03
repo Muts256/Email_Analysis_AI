@@ -9,29 +9,29 @@
 
 #### IOCs
 - *Sender:** "Microsoft 365 Security" <security-noreply@microsoft365-verify.com> - display name impersonates Microsoft but domain is microsoft365-verify.com, not microsoft.com
-- *Reply-To:* m365-support@securemail-verify.net — entirely different domain to the sender, a strong indicator of malicious intent
+- *Reply-To:* m365-support@securemail-verify.net - entirely different domain to the sender, a strong indicator of malicious intent
 - *Source IP:* 194.165.16.83 (external relay), 45.133.203.17 (originating host)
 - *Domains/URLs:* microsoft365-verify.com, securemail-verify.net, https://microsoft365-verify.com/reset?token=aHR0cHM6Ly9sb2dpbi5taWNyb3NvZnQuY29t&uid=james.miller&org=technovaLtd
 
   The token value is Base64 encoded and decodes to https://login.microsoft.com, a common obfuscation technique
 - *Attachments:* None
-- *Authentication Results:* SPF: FAIL — IP 194.165.16.83 not authorised for microsoft365-verify.com | DKIM: NONE — no signature present | DMARC: FAIL — policy=none meaning no enforcement action taken
+- *Authentication Results:* SPF: FAIL — IP 194.165.16.83 not authorised for microsoft365-verify.com | DKIM: NONE - no signature present | DMARC: FAIL - policy=none meaning no enforcement action taken
 
 #### Social Engineering Indicators
-- Urgency and fear — "Your password will expire in 24 hours."
-- Consequence escalation — "your account will be temporarily locked" and "IT department will require an in-person visit"
-- Impersonation of a trusted platform — Microsoft 365 branding and terminology
-- Personalisation — target's full name, username, and organisation embedded in the URL and tracking pixel
-- Tracking pixel present — confirms email delivery and open status back to attacker infrastructure
+- Urgency and fear - "Your password will expire in 24 hours."
+- Consequence escalation - "your account will be temporarily locked" and "IT department will require an in-person visit"
+- Impersonation of a trusted platform - Microsoft 365 branding and terminology
+- Personalisation - target's full name, username, and organisation embedded in the URL and tracking pixel
+- Tracking pixel present - confirms email delivery and open status back to attacker infrastructure
 
 #### Technical Assessment
 - *Initial Access:* Valid Accounts via harvested credentials (user clicks link and submits credentials to attacker-controlled page)
 - *Impact:* Account takeover, unauthorised access to email, Teams, OneDrive, and any connected services. Potential for lateral movement or Business Email Compromise from the compromised account
 - *Likelihood of Success:* Medium — authentication failures are detectable but DMARC policy=none means no automatic quarantine or rejection
 - *MITRE ATT&CK:*
-  - T1566.002 — Phishing: Spearphishing Link
-  - T1078 — Valid Accounts
-  - T1598 — Steal Web Session Cookie (likely post-credential harvest)
+  - T1566.002 - Phishing: Spearphishing Link
+  - T1078 - Valid Accounts
+  - T1598 - Steal Web Session Cookie (likely post-credential harvest)
 
 *Severity: HIGH*
 
@@ -52,30 +52,30 @@ Targets a named individual with personalised content, uses credential harvesting
 *Threat Type:* Business Email Compromise (BEC)
 
 #### IOCs
-- *Sender:* "David Hargreaves - CEO" <d.hargreaves@pinnacle-group.com> — no display name spoofing detected, sender domain appears consistent
-- *Reply-To:* Not present — email instructs recipient to reply directly, keeping communication within the attacker's controlled mailbox
+- *Sender:* "David Hargreaves - CEO" <d.hargreaves@pinnacle-group.com> - no display name spoofing detected, sender domain appears consistent
+- *Reply-To:* Not present - email instructs recipient to reply directly, keeping communication within the attacker's controlled mailbox
 - *Source IP:* 203.78.142.56
-- *Domains/URLs:* pinnacle-group.com — no malicious URLs present. The attack is entirely social engineering-based
+- *Domains/URLs:* pinnacle-group.com - no malicious URLs present. The attack is entirely social engineering-based
 - *Attachments:* None
-- *Authentication Results:* SPF: PASS | DKIM: PASS | DMARC: PASS (policy=reject) — all authentication checks pass, meaning this email would not be flagged by standard technical controls
+- *Authentication Results:* SPF: PASS | DKIM: PASS | DMARC: PASS (policy=reject) - all authentication checks pass, meaning this email would not be flagged by standard technical controls
 
 #### Social Engineering Indicators
 - Authority impersonation: sender presents as the CEO of an external organisation
 - Extreme urgency: "before 3:00 PM EST" and "without exception."
 - Isolation tactic: "do not discuss this with anyone else."
-- Availability barrier:  "I am in back-to-back board meetings and cannot take phone calls" — pre-emptively removes the most effective verification method
+- Availability barrier:  "I am in back-to-back board meetings and cannot take phone calls" - pre-emptively removes the most effective verification method
 - Confidentiality pressure: "until the deal is announced Monday."
 - Specific financial detail: precise bank account, routing number, and amount to appear legitimate and reduce hesitation
 - Reply-only instruction: "reply to this email only for confirmation." Designed to keep the victim inside the attacker's controlled channel.
 
 #### Technical Assessment
-- *Initial Access:* Not applicable — no malware or credential harvesting. The email itself is the attack
+- *Initial Access:* Not applicable - no malware or credential harvesting. The email itself is the attack
 - *Impact:* Direct financial loss of $47,250.00. Potential for further requests if initial transfer succeeds. Reputational damage if the organisation is seen to have been defrauded
-- *Likelihood of Success:* High — all authentication checks pass, the email contains no malicious links or attachments, and the social engineering is sophisticated and contextually convincing
+- *Likelihood of Success:* High - all authentication checks pass, the email contains no malicious links or attachments, and the social engineering is sophisticated and contextually convincing
 - *MITRE ATT&CK:*
-  - T1566.001 — Phishing: Spearphishing Attachment (adapted: no attachment but same spearphishing principle)
-  - T1657 — Financial Theft
-  - T1585 — Establish Accounts (attacker likely compromised or registered pinnacle-group.com to pass authentication)
+  - T1566.001 - Phishing: Spearphishing Attachment (adapted: no attachment but same spearphishing principle)
+  - T1657 - Financial Theft
+  - T1585 - Establish Accounts (attacker likely compromised or registered pinnacle-group.com to pass authentication)
 
 *Severity: CRITICAL*
 
@@ -96,12 +96,12 @@ All technical authentication checks pass, making this invisible to standard emai
 *Threat Type:* Malware Delivery
 
 #### IOCs
-- *Sender:* "TechNova Ltd Human Resources" <hr-benefits@technovaLtd.com> — display name and domain both appear internal, but the email did not originate from TechNova infrastructure
+- *Sender:* "TechNova Ltd Human Resources" <hr-benefits@technovaLtd.com> - display name and domain both appear internal, but the email did not originate from TechNova infrastructure
 - *Reply-To:* Not present
-- *Source IP:* 77.91.124.38 — external and unknown, inconsistent with internal HR communications
+- *Source IP:* 77.91.124.38 - external and unknown, inconsistent with internal HR communications
 - *Domains/URLs:* None — attack vector is the attachment
-- *Attachments:* Employee_Benefits_Q2_2025.xlsm (487 KB) — .xlsm is a macro-enabled Excel file, a well-established malware delivery format
-- *Authentication Results:* SPF: SOFTFAIL — IP 77.91.124.38 not explicitly authorised for technovaLtd.com | DKIM: FAIL — signature verification failed | DMARC: FAIL — policy=quarantine, meaning this email should have been quarantined automatically
+- *Attachments:* Employee_Benefits_Q2_2025.xlsm (487 KB) - .xlsm is a macro-enabled Excel file, a well-established malware delivery format
+- *Authentication Results:* SPF: SOFTFAIL - IP 77.91.124.38 not explicitly authorised for technovaLtd.com | DKIM: FAIL — signature verification failed | DMARC: FAIL — policy=quarantine, meaning this email should have been quarantined automatically
 
 #### Social Engineering Indicators
 - Internal impersonation: pretends to originate from TechNova Ltd's own HR department
@@ -112,14 +112,14 @@ All technical authentication checks pass, making this invisible to standard emai
 - Familiar contact detail: references HR extension 4500 to appear authentic
 
 #### Technical Assessment
-- *Initial Access:* Phishing attachment — macro-enabled Excel file likely delivers a malicious payload upon macro execution
+- *Initial Access:* Phishing attachment - macro-enabled Excel file likely delivers a malicious payload upon macro execution
 - *Impact:* Malware infection of the opening user's device. Depending on payload: ransomware deployment, credential harvesting, remote access trojan (RAT) installation, or lateral movement across the TechNova network. Broad targeting means potential for widespread infection
-- *Likelihood of Success:* Medium to High — internal impersonation is convincing and the benefits context is routine. DMARC policy=quarantine should catch it, but relies on the quarantine being reviewed rather than released
+- *Likelihood of Success:* Medium to High - internal impersonation is convincing and the benefits context is routine. DMARC policy=quarantine should catch it, but relies on the quarantine being reviewed rather than released
 - *MITRE ATT&CK:*
-  - T1566.001 — Phishing: Spearphishing Attachment
-  - T1204.002 — User Execution: Malicious File
-  - T1059 — Command and Scripting Interpreter (macro execution)
-  - T1486 — Data Encrypted for Impact (if ransomware payload)
+  - T1566.001 - Phishing: Spearphishing Attachment
+  - T1204.002 - User Execution: Malicious File
+  - T1059 - Command and Scripting Interpreter (macro execution)
+  - T1486 - Data Encrypted for Impact (if ransomware payload)
 
 *Severity: CRITICAL*
 
