@@ -78,9 +78,8 @@ Working through these three case studies, the moment that stayed with me was Cas
 
 Seeing SPF pass, DKIM pass, and DMARC pass with a reject policy, and then watching AI continue past those green checkmarks and systematically analyse the email on behavioural grounds alone, made something clear that I had understood intellectually but not quite felt before.
 
-The authentication checks passing did not mean the email was safe. It meant the attacker had done their homework. And in that gap — between what the technical controls confirm and what the full picture actually shows, is exactly where analysts get caught out and where AI assistance 
-makes a genuine difference.
+The authentication checks passing did not mean the email was safe. It meant the attacker had done their homework. And in that gap between what the technical controls confirm and what the full picture actually shows, is exactly where analysts get caught out and where AI assistance makes a genuine difference.
 
-The checks being comprehensive is not just about speed. It is about consistency. It is about ensuring that every email, regardless of how clean it looks on the surface, gets the same depth of scrutiny. That is what this project set out to test. And on that measure, the answer is clear.
+The comprehensiveness of the checks is not just about speed. It is about consistency. It is about ensuring that every email, regardless of how clean it looks on the surface, gets the same depth of scrutiny. That is what this project set out to test. And on that measure, the answer is clear.
 
-AI does not make the analyst redundant. It makes the analyst better equipped for the threat that actually exists — not the one that fails all its authentication checks and announces itself clearly, but the one that looks legitimate right up until the moment it isn't.
+AI does not make the analyst redundant. It makes the analyst better equipped for the threat that actually exists, not the one that fails all its authentication checks and announces itself clearly, but the one that looks legitimate right up until the moment it isn't.
