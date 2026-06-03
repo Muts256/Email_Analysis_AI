@@ -137,7 +137,7 @@ Impersonates a trusted internal function, targets the entire organisation, and t
 #### Cross-Email Correlation
 
 #### Timing Pattern
-The three emails arrived on consecutive working days — Monday 07 April, Tuesday 08 April, and Wednesday 09 April 2025. This is not coincidental. A three-day sequence of escalating attacks against the same organisation strongly suggests a coordinated campaign rather than opportunistic phishing.
+The three emails arrived on consecutive working days - Monday 07 April, Tuesday 08 April, and Wednesday 09 April 2025. This is not coincidental. A three-day sequence of escalating attacks against the same organisation strongly suggests a coordinated campaign rather than opportunistic phishing.
 
 ##### Targeting Pattern
 The campaign demonstrates a deliberate escalation in targeting scope and sophistication:
